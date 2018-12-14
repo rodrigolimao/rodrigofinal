@@ -12,8 +12,7 @@ namespace F2018Letterkenny.Models
 
         Character IMockCharacter.Save(Character character)
         {
-            //throw new NotImplementedException();
-            db.SaveChanges();
+            throw new NotImplementedException();
         }
     }
 }
