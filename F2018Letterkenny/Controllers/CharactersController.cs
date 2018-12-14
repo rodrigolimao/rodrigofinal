@@ -29,7 +29,7 @@ namespace F2018Letterkenny.Controllers
         // GET: Characters
         public ActionResult Index()
         {
-            return View(db.Characters.ToList());
+            return View("Index", db.Characters.ToList());
         }
 
         // GET: Characters/Details/5
@@ -61,7 +61,7 @@ namespace F2018Letterkenny.Controllers
             {
                 return HttpNotFound();
             }
-            return View(character);
+            return View("Edit", character);
         }
 
         // POST: Characters/Edit/5
@@ -77,7 +77,7 @@ namespace F2018Letterkenny.Controllers
                 db.Save(character);
                 return RedirectToAction("Index");
             }
-            return View(character);
+            return View("Edit", character);
         }
     }
 }
