@@ -32,7 +32,7 @@ namespace F2018Letterkenny
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
                         //
-                        c.SingleApiVersion("v1", "F2018Letterkenny");
+                        c.SingleApiVersion("v1", "Rodrigo Camargo Lima 200380021");
 
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //
